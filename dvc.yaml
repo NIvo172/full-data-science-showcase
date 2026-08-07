@@ -1,0 +1,26 @@
+vars:
+  - configs/models/baseline.yaml
+
+stages:
+  prepare-example-data:
+    cmd: >-
+      python -m full_data_science_example.pipeline
+      tests/data/observations.csv
+      data/processed/summary.json
+      data/processed/metrics.json
+      reports/figures/cumulative_mean.csv
+      --round-digits ${summary.round_digits}
+    deps:
+      - src/full_data_science_example/pipeline.py
+      - tests/data/observations.csv
+    params:
+      - configs/models/baseline.yaml:
+          - summary.round_digits
+    outs:
+      - data/processed/summary.json
+    metrics:
+      - data/processed/metrics.json
+    plots:
+      - reports/figures/cumulative_mean.csv:
+          x: observation
+          y: cumulative_mean

@@ -1,0 +1,5 @@
+# Default ownership for the complete repository.
+* @example/full-data-science-maintainers
+
+# Keep repository policy changes with the default owners.
+/.github/ @example/full-data-science-maintainers

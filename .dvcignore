@@ -1,0 +1,5 @@
+# Add patterns of files DVC should ignore to improve traversal performance.
+# Learn more at https://dvc.org/doc/user-guide/dvcignore
+
+# The active pipeline files are checked at the project root; these are reproduction sources.
+/reproduction/overlay/

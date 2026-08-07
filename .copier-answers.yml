@@ -1,0 +1,32 @@
+# Changes here will be overwritten by Copier.
+_commit: 4f8e9be
+_src_path: ../python-project-copier-template
+build_backend: hatchling
+changelog_url: https://github.com/example/full-data-science-example/blob/main/CHANGELOG.md
+ci_provider: github
+code_owners: '@example/full-data-science-maintainers'
+distribution_name: full-data-science-example
+docstring_style: google
+documentation_url: https://example.com/full-data-science-example/docs
+has_other_contributors: true
+homepage_url: https://example.com/full-data-science-example
+minimum_python_version: '3.11'
+package_name: full_data_science_example
+project_description: End-to-end example exercising every template capability
+project_kind: data_science
+project_name: Full Data Science Example
+python_versions:
+- '3.11'
+- '3.12'
+- '3.13'
+- '3.14'
+repository_url: https://github.com/example/full-data-science-example
+use_docs: true
+use_dvc: true
+use_example_gallery: true
+use_notebooks: true
+use_precommit: true
+use_uml: true
+use_vscode: true
+user_email: john.doe@example.com
+user_name: John Doe
