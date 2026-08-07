@@ -1,0 +1,32 @@
+schema: '2.0'
+stages:
+  prepare-example-data:
+    cmd: python -m full_data_science_example.pipeline 
+      tests/data/observations.csv data/processed/summary.json 
+      data/processed/metrics.json reports/figures/cumulative_mean.csv 
+      --round-digits 3
+    deps:
+    - path: src/full_data_science_example/pipeline.py
+      hash: md5
+      md5: ee0011c3bbd89f3c684c965f2c643082
+      size: 3856
+    - path: tests/data/observations.csv
+      hash: md5
+      md5: 25ef3a11e49406d5f4be5163c0d1ce06
+      size: 14
+    params:
+      configs/models/baseline.yaml:
+        summary.round_digits: 3
+    outs:
+    - path: data/processed/metrics.json
+      hash: md5
+      md5: b5b5b2a16781b11767a478ea3c0b5a23
+      size: 39
+    - path: data/processed/summary.json
+      hash: md5
+      md5: 4f5add685b8f562d1f3510517f5565a3
+      size: 146
+    - path: reports/figures/cumulative_mean.csv
+      hash: md5
+      md5: d35ed36d23deb1045652730fa4656908
+      size: 79
