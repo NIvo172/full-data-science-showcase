@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier.
-_commit: c51b397
+_commit: 6a49c05
 _src_path: ../python-project-copier-template
 build_backend: hatchling
 changelog_url: https://github.com/example/full-data-science-example/blob/main/CHANGELOG.md
