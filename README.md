@@ -104,6 +104,7 @@ The repository guides separate daily development from maintainer-only operations
 
 | File | Audience | Contents |
 | --- | --- | --- |
+| `AGENTS.md` | AI agents and contributors | The canonical task → command catalog: environment, Tox envs, validation, and maintenance workflows |
 | `CONTRIBUTING.md` | Contributors | Environment setup, dependencies, validation, reports, and optional feature workflows |
 | `MAINTAINING.md` | Maintainers | One-time bootstrap, lock/version policy, CI, builds, collaboration, and Copier updates |
 | `docs/README.md` | Documentation authors | Pages, API reference, examples, notebooks, and UML |
@@ -137,4 +138,4 @@ uv run --locked tox run -e clean
 
 ## Licence
 
-This project is licensed under the MIT License. See `LICENSE`.
+This project is licensed under the MIT license. See `LICENSE`.

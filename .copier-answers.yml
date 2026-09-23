@@ -1,16 +1,20 @@
 # Changes here will be overwritten by Copier.
-_commit: 6a49c05
+_commit: v0.0.11
 _src_path: ../python-project-copier-template
 build_backend: hatchling
 changelog_url: https://github.com/example/full-data-science-example/blob/main/CHANGELOG.md
 ci_provider: github
 code_owners: '@example/full-data-science-maintainers'
+coverage_fail_under: 80
 distribution_name: full-data-science-example
 docstring_style: google
 documentation_url: https://example.com/full-data-science-example/docs
 has_other_contributors: true
 homepage_url: https://example.com/full-data-science-example
+license: MIT
 minimum_python_version: '3.11'
+mypy_strict: true
+mypy_strict_tests: false
 package_name: full_data_science_example
 project_description: End-to-end example exercising every template capability
 project_kind: data_science
